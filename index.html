@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FARIEX STORE - Jual Beli Akun & Diamond FF/ML Terpercaya</title>
+    <title>JUARA GAMING - Jual Beli Akun & Diamond FF/ML Terpercaya</title>
     <!-- FontAwesome & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -96,10 +96,12 @@
             font-size: 13px;
             font-weight: 500;
             transition: 0.3s;
+            cursor: pointer;
         }
 
         nav ul li a:hover, nav ul li a.active {
             color: #fff;
+            text-shadow: 0 0 8px rgba(255,255,255,0.5);
         }
 
         .nav-btns {
@@ -117,6 +119,13 @@
             font-size: 13px;
             font-weight: 600;
             box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-login:hover {
+            opacity: 0.9;
         }
 
         .btn-user {
@@ -129,6 +138,8 @@
             justify-content: center;
             color: #fff;
             font-size: 12px;
+            border: none;
+            cursor: pointer;
         }
 
         /* Hero Banner Section */
@@ -194,6 +205,11 @@
             justify-content: space-between;
             box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
             cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-3px);
         }
 
         .hero-card.gold-border {
@@ -250,6 +266,11 @@
             display: flex;
             gap: 12px;
             position: relative;
+            transition: 0.3s;
+        }
+
+        .acc-card:hover {
+            border-color: rgba(255, 215, 0, 0.4);
         }
 
         .acc-badge {
@@ -326,6 +347,11 @@
             font-weight: 600;
             cursor: pointer;
             margin-top: 6px;
+            transition: 0.2s;
+        }
+
+        .btn-detail:hover {
+            opacity: 0.85;
         }
 
         /* Top Up Side Section */
@@ -360,6 +386,13 @@
             align-items: center;
             margin-bottom: 8px;
             font-size: 11px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .topup-item:hover {
+            background: rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
         }
 
         .topup-item span:first-child {
@@ -415,6 +448,8 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 25px;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .footer-col h4 {
@@ -434,6 +469,12 @@
         .footer-col ul li a {
             color: #64748b;
             text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
         }
 
         .payment-methods {
@@ -444,14 +485,17 @@
         }
 
         .pay-badge {
-            background: #1e293b;
             color: #fff;
             font-size: 9px;
             font-weight: 700;
             padding: 4px 8px;
             border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            transition: 0.2s;
         }
 
+        .pay-badge:hover { transform: scale(1.05); }
         .pay-badge.dana { background: #008ced; }
         .pay-badge.ovo { background: #4c2a86; }
         .pay-badge.shopee { background: #ee4d2d; }
@@ -467,8 +511,12 @@
 
         .social-links a {
             color: #fff;
-            font-size: 12px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.2s;
         }
+
+        .social-links a:hover { color: #ffd700; }
 
         .footer-bottom {
             text-align: center;
@@ -494,6 +542,64 @@
             box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
             cursor: pointer;
             z-index: 1000;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .chat-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Modal Pop-up Interaktif */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal-box {
+            background: #121026;
+            border: 1px solid #3b82f6;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .modal-title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .modal-body {
+            font-size: 12px;
+            color: #cbd5e1;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .modal-close {
+            background: #ef4444;
+            color: #fff;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 11px;
+            cursor: pointer;
+            font-weight: 600;
+            float: right;
         }
     </style>
 </head>
@@ -501,31 +607,31 @@
 
     <!-- Top Notification Bar -->
     <div class="top-bar">
-        FARIEX STORE - Jual Beli Akun & Diamond FF/ML Terpercaya
+        JUARA GAMING - Jual Beli Akun & Diamond FF/ML Terpercaya
     </div>
 
     <!-- Header Navigation -->
     <header>
-        <a href="#" class="logo">
+        <a href="#" class="logo" onclick="showAlert('Navigasi ke Beranda')">
             <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
             <div class="logo-text">
-                <span>FARIEX</span>
-                <span>STORE</span>
+                <span>JUARA</span>
+                <span>GAMING</span>
             </div>
         </a>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Jual Akun</a></li>
-                <li><a href="#">Beli Akun</a></li>
-                <li><a href="#">Top Up Diamond</a></li>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a class="nav-link active" onclick="switchNav(this, 'Home')">Home</a></li>
+                <li><a class="nav-link" onclick="switchNav(this, 'Jual Akun')">Jual Akun</a></li>
+                <li><a class="nav-link" onclick="switchNav(this, 'Beli Akun')">Beli Akun</a></li>
+                <li><a class="nav-link" onclick="switchNav(this, 'Top Up Diamond')">Top Up Diamond</a></li>
+                <li><a class="nav-link" onclick="switchNav(this, 'Berita')">Berita</a></li>
+                <li><a class="nav-link" onclick="switchNav(this, 'Kontak')">Kontak</a></li>
             </ul>
         </nav>
         <div class="nav-btns">
-            <a href="#" class="btn-login">Login/Register</a>
-            <a href="#" class="btn-user"><i class="fa-solid fa-user"></i></a>
+            <button class="btn-login" onclick="openModal('Login / Register', 'Silakan masuk menggunakan akun Juara Gaming Anda untuk melanjutkan transaksi.')">Login/Register</button>
+            <button class="btn-user" onclick="openModal('Profil Pengguna', 'Anda belum masuk. Silakan Login/Register terlebih dahulu.')"><i class="fa-solid fa-user"></i></button>
         </div>
     </header>
 
@@ -540,14 +646,14 @@
 
         <!-- Banner Cards Option -->
         <div class="hero-cards-container">
-            <div class="hero-card gold-border">
+            <div class="hero-card gold-border" onclick="openModal('Menu Jual Beli Akun', 'Menampilkan daftar 12,450+ akun Free Fire dan Mobile Legends terverifikasi aman.')">
                 <div class="hero-card-info">
                     <div class="hero-card-title">JUAL BELI AKUN</div>
                     <div class="hero-card-sub">12,450+ Akun Tersedia</div>
                 </div>
                 <i class="fa-solid fa-shield-halved" style="color: #ffd700; font-size: 24px;"></i>
             </div>
-            <div class="hero-card">
+            <div class="hero-card" onclick="openModal('Menu Top Up Diamond', 'Pilih nominal diamond instan untuk game Free Fire dan Mobile Legends Anda.')">
                 <div class="hero-card-info">
                     <div class="hero-card-title">TOP UP DIAMOND</div>
                     <div class="hero-card-sub">Harga Termurah & Instan</div>
@@ -580,7 +686,7 @@
                         </div>
                         <div>
                             <div class="acc-price">Rp 450.000</div>
-                            <button class="btn-detail">LIHAT DETAIL</button>
+                            <button class="btn-detail" onclick="openModal('Detail Akun Free Fire', 'Akun FF Level 72, Full Skin Alok, Karakter Lengkap. Harga: Rp 450.000. Klik Lanjutkan untuk memproses pembelian.')">LIHAT DETAIL</button>
                         </div>
                     </div>
                 </div>
@@ -594,83 +700,4 @@
                     <div class="acc-details">
                         <div>
                             <div class="acc-title">[Mythic Glory, 150+ Skins, Legend/Collector Skins]</div>
-                            <div class="acc-meta">
-                                <div><i class="fa-solid fa-crown" style="color: #ffd700;"></i> Mythic Glory</div>
-                                <div>Server: FF MY</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="acc-price">Rp 725.000</div>
-                            <button class="btn-detail">LIHAT DETAIL</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 (FF) -->
-                <div class="acc-card">
-                    <span class="acc-badge">FF</span>
-                    <div class="acc-img-box">
-                        <i class="fa-solid fa-user-ninja"></i>
-                    </div>
-                    <div class="acc-details">
-                        <div>
-                            <div class="acc-title">[Alok Skin, Legend Skins, Level 72]</div>
-                            <div class="acc-meta">
-                                <div><i class="fa-solid fa-trophy" style="color: #ffd700;"></i> Rank</div>
-                                <div>Server: FF MY</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="acc-price">Rp 450.000</div>
-                            <button class="btn-detail">LIHAT DETAIL</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 (ML) -->
-                <div class="acc-card">
-                    <span class="acc-badge">ML</span>
-                    <div class="acc-img-box">
-                        <i class="fa-solid fa-chess-queen"></i>
-                    </div>
-                    <div class="acc-details">
-                        <div>
-                            <div class="acc-title">[Mythic Glory, 150+ Skins, Legend/Collector Skins]</div>
-                            <div class="acc-meta">
-                                <div><i class="fa-solid fa-crown" style="color: #ffd700;"></i> Mythic Glory</div>
-                                <div>Server: FF MY</div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="acc-price">Rp 725.000</div>
-                            <button class="btn-detail">LIHAT DETAIL</button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Top Up Side Panel -->
-        <div>
-            <div class="section-title">TOP UP DIAMOND FF/ML INSTAN</div>
-            <div class="topup-box">
-                <!-- Free Fire Section -->
-                <div class="game-group-title">
-                    <i class="fa-solid fa-fire"></i> Free Fire
-                </div>
-                <div class="topup-item">
-                    <span><i class="fa-solid fa-gem"></i> 70 Diamonds</span>
-                    <span>Rp 9.500</span>
-                </div>
-                <div class="topup-item">
-                    <span><i class="fa-solid fa-gem"></i> 355 Diamonds</span>
-                    <span>Rp 46.000</span>
-                </div>
-
-                <!-- Mobile Legends Section -->
-                <div class="game-group-title" style="margin-top: 15px;">
-                    <i class="fa-solid fa-shield-cat"></i> Mobile Legends
-                </div>
-                <div class="topup-item">
-                    <span><i class="fa-solid fa-gem"></i> 86 Diamonds</spa
+                        
