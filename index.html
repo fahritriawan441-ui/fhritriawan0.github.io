@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreKu - Jual Beli Akun & Diamond FF ML Terpercaya</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-amber-400">⚡ StoreKu</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#home" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#akun" class="hover:text-amber-400 transition">Beli Akun</a>
+                <a href="#diamond" class="hover:text-amber-400 transition">Top Up Diamond</a>
+                <a href="#testi" class="hover:text-amber-400 transition">Testimoni</a>
+            </nav>
+            <div>
+                <button onclick="handleAuthClick()" id="authBtn" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg shadow-amber-500/20">
+                    Masuk / Daftar
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center lg:text-left flex flex-col lg:flex-row items-center justify-between">
+        <div class="lg:w-1/2 space-y-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                Pusat Jual Beli Akun & <span class="text-amber-400">Diamond Terpercaya</span>
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg">
+                Temukan akun Free Fire & Mobile Legends impianmu atau top up diamond dengan proses instan, aman, dan bergaransi 100%!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                <button onclick="scrollToSection('akun')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-amber-500/25">
+                    Cari Akun Sekarang
+                </button>
+                <button onclick="scrollToSection('diamond')" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 font-bold px-6 py-3 rounded-xl transition">
+                    Top Up Diamond
+                </button>
+            </div>
+        </div>
+        <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center">
+            <div class="bg-gradient-to-tr from-amber-500/20 to-blue-500/20 p-8 rounded-3xl border border-slate-800 text-center shadow-2xl">
+                <span class="text-6xl">🎮</span>
+                <h3 class="text-xl font-bold mt-4">Garansi Anti-Hack Back</h3>
+                <p class="text-slate-400 text-sm mt-2">Semua transaksi dijamin aman dan dilindungi oleh sistem verifikasi ketat kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Beli Akun -->
+    <section id="akun" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center lg:text-left border-l-4 border-amber-400 pl-3">
+            Akun Pilihan (FF & ML)
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-amber-500/50 transition">
+                <div class="bg-slate-800 h-40 flex items-center justify-center text-4xl">🔥</div>
+                <div class="p-5 space-y-3">
+                    <span class="bg-red-500/10 text-red-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-red-500/20">Free Fire</span>
+                    <h3 class="font-bold text-lg">Akun Sultan Old Season 2</h3>
+                    <p class="text-slate-400 text-sm">Full Skin SG Ungu, Bundle Langka, Winrate Tinggi.</p>
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="text-amber-400 font-bold text-lg">Rp 350.000</span>
+                        <button onclick="buyItem('Akun Free Fire Sultan Old')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-amber-500/50 transition">
+                <div class="bg-slate-800 h-40 flex items-center justify-center text-4xl">⚔️</div>
+                <div class="p-5 space-y-3">
+                    <span class="bg-blue-500/10 text-blue-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-blue-500/20">Mobile Legends</span>
+                    <h3 class="font-bold text-lg">Akun Mythic Immortal All Role</h3>
+                    <p class="text-slate-400 text-sm">Skin Collector, Epic Limited, Emblem Max.</p>
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="text-amber-400 font-bold text-lg">Rp 750.000</span>
+                        <button onclick="buyItem('Akun Mobile Legends Mythic Immortal')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl hover:border-amber-500/50 transition">
+                <div class="bg-slate-800 h-40 flex items-center justify-center text-4xl">💎</div>
+                <div class="p-5 space-y-3">
+                    <span class="bg-purple-500/10 text-purple-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-purple-500/20">Free Fire / ML</span>
+                    <h3 class="font-bold text-lg">Paket Combo Hemat FF + ML</h3>
+                    <p class="text-slate-400 text-sm">2 Akun Sekaligus, Spek Mantap, Harga Pelajar.</p>
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="text-amber-400 font-bold text-lg">Rp 500.000</span>
+                        <button onclick="buyItem('Paket Combo Hemat FF + ML')" class="bg-amber-500 hover:bg-amber-600 text-slate-950 text-sm font-semibold px-4 py-2 rounded-lg transition">
+                            Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Top Up Diamond -->
+    <section id="diamond" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8 text-center lg:text-left border-l-4 border-amber-400 pl-3">
+            Top Up Diamond Instan
+        </h2>
+        <div class="bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-3xl shadow-xl max-w-2xl mx-auto">
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium mb-1">Pilih Game</label>
+                    <select id="gameSelect" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400">
+                        <option value="Mobile Legends">Mobile Legends (ML)</option>
+                        <option value="Free Fire">Free Fire (FF)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">User ID & Server ID</label>
+                    <input type="text" id="userIdInput" placeholder="Contoh: 12345678 (1234)" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-1">Pilih Nominal Diamond</label>
+                    <div class="grid grid-cols-3 gap-3">
+                        <button type="button" onclick="selectDiamond(this, '86 Diamond', 'Rp 20.000')" class="diamond-btn bg-slate-950 border border-slate-700 hover:border-amber-400 p-3 rounded-xl text-center transition">
+                            <div class="font-bold text-sm">86 💎</div>
+                            <div class="text-xs text-amber-400 mt-1">Rp 20.000</div>
+                        </button>
+                        <button type="button" onclick="selectDiamond(this, '172 Diamond', 'Rp 40.000')" class="diamond-btn bg-slate-950 border border-slate-700 hover:border-amber-400 p-3 rounded-xl text-center transition">
+                            <div class="font-bold text-sm">172 💎</div>
+                            <div class="text-xs text-amber-400 mt-1">Rp 40.000</div>
+                        </button>
+                        <button type="button" onclick="selectDiamond(this, '344 Diamond', 'Rp 80.000')" class="diamond-btn bg-slate-950 border border-slate-700 hover:border-amber-400 p-3 rounded-xl text-center transition">
+                            <div class="font-bold text-sm">344 💎</div>
+                            <div class="text-xs text-amber-400 mt-1">Rp 80.000</div>
+                        </button>
+                    </div>
+                </div>
+                <button onclick="processTopUp()" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg shadow-amber-500/20 mt-4">
+                    Proses Top Up Sekarang
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6 mt-12 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 StoreKu. All rights reserved. Aman, Cepat & Terpercaya.</p>
+    </footer>
+
+    <!-- JavaScript untuk Interaksi Semua Tombol -->
+    <script>
+        let selectedDiamondPackage = null;
+
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleAuthClick() {
+            alert("Fitur Login / Daftar diklik! Silakan masukkan akun atau registrasi.");
+        }
+
+        function buyItem(itemName) {
+            alert("Anda memilih untuk membeli: " .concat(itemName, ". Silakan lanjutkan ke halaman pembayaran."));
+        }
+
+        function selectDiamond(btnElement, nominal, harga) {
+            // Hilangkan border aktif dari semua tombol diamond
+            document.querySelectorAll('.diamond-btn').forEach(btn => {
+                btn.classList.remove('border-amber-400', 'bg-amber-500/10');
+            });
+            // Berikan tanda aktif pada tombol yang diklik
+            btnElement.classList.add('border-amber-400', 'bg-amber-500/10');
+            selectedDiamondPackage = { nominal, harga };
+        }
+
+        function processTopUp() {
+            const game = document.getElementById('gameSelect').value;
+            const userId = document.getElementById('userIdInput').value;
+
+            if (!userId) {
+                alert("Harap masukkan User ID & Server ID terlebih dahulu!");
+                return;
+            }
+            if (!selectedDiamondPackage) {
+                alert("Harap pilih nominal diamond terlebih dahulu!");
+                return;
+            }
+
+            alert("Top Up Berhasil Diproses!\nGame: ".concat(game, "\nID: ").concat(userId, "\nNominal: ").concat(selectedDiamondPackage.nominal, "\nHarga: ").concat(selectedDiamondPackage.harga));
+        }
+    </script>
+</body>
+</html>
